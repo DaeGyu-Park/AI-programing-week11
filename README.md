@@ -31,8 +31,6 @@ python -m pytest test_ai_B.py --cov=load_scores --cov-report=term-missing
 `test_load_scores.py` 실행 결과는 11개 통과·1개 실패입니다. 강의에서 일부러 틀리도록 넣은 `assert len(kept) == 99`를 그대로 유지했으며, 실제 값 5와 달라 실패합니다. 이 파일의 커버리지는 76%입니다.
 A 초안은 18개 통과·커버리지 80%, B 초안은 19개 통과·80%입니다.
 
-A/B는 같은 대화에서 만든 AI 초안이며, 수업의 독립된 새 대화 비교 실험은 별도 수행이 필요합니다.
-
 ## ⑤ 파일 구성
 - `load_scores.py`: 성적 CSV를 읽는 프로그램
 - `scores.csv`, `empty.csv`, `weird.csv`: 실습 데이터
