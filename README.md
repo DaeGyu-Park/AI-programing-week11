@@ -18,6 +18,7 @@ python load_scores.py scores.csv
 ```
 
 배포 scores.csv의 결과는 유효 5개, 건너뜀 5개입니다.
+여러 파일은 `python check.py scores.csv empty.csv weird.csv`로 확인합니다.
 
 ## ④ 어떻게 테스트하나요
 ```powershell
@@ -38,6 +39,7 @@ A/B는 같은 대화에서 만든 AI 초안이며, 수업의 독립된 새 대�
 - `test_load_scores.py`: 강의 코드 그대로의 정상·예외·경계값 및 의도적 실패 테스트
 - `test_ai_A.py`, `test_ai_B.py`: AI 테스트 초안
 - `bug3_logic.py`, `prompts.txt`: 수업의 함정 실험 코드와 프롬프트
+- `check.py`: 여러 CSV를 확인하는 도구
 - `.gitignore`, `LICENSE`: Python 제외 규칙과 MIT 라이선스
 
 ## ⑥ 만든 사람과 AI 사용
